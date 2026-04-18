@@ -218,40 +218,6 @@
       text-align: center;
     }
     .dash-meta time { color: var(--accent); font-variant-numeric: tabular-nums; }
-    .dash-actions {
-      margin-top: 1rem;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 0.5rem;
-    }
-    .btn-refresh {
-      cursor: pointer;
-      font: inherit;
-      font-size: 0.9rem;
-      font-weight: 600;
-      padding: 0.55rem 1.25rem;
-      border-radius: 10px;
-      border: 1px solid var(--accent-dim);
-      background: linear-gradient(180deg, var(--surface2) 0%, var(--surface) 100%);
-      color: var(--accent);
-    }
-    .btn-refresh:hover:not(:disabled) {
-      border-color: var(--accent);
-      background: var(--surface2);
-    }
-    .btn-refresh:disabled {
-      opacity: 0.55;
-      cursor: not-allowed;
-    }
-    .dash-hint {
-      margin: 0;
-      font-size: 0.82rem;
-      color: var(--muted);
-      text-align: center;
-      max-width: 36rem;
-      line-height: 1.5;
-    }
     .table-wrap--wide { max-width: 100%; }
     .overview-matrix-wrap { margin-top: 0.5rem; }
     .overview-matrix th,
@@ -321,11 +287,7 @@
   <div class="wrap">
     <header class="hero">
       <h1>昇腾生态·三方社区核心指标看板</h1>
-      <p class="dash-meta" aria-live="polite">数据更新时间：<time id="dash-updated-at" datetime="2026-04-18T07:18:17Z">2026-04-18 07:18 UTC</time></p>
-      <div class="dash-actions">
-        <button type="button" id="btn-refresh-reports" class="btn-refresh">一键刷新数据</button>
-        <p class="dash-hint" id="dash-refresh-hint" role="status"></p>
-      </div>
+      <p class="dash-meta" aria-live="polite">数据更新时间：<time id="dash-updated-at" datetime="2026-04-18T07:52:26Z">2026-04-18 07:52 UTC</time></p>
     </header>
 
     <nav class="pills" aria-label="章节导航">
@@ -372,7 +334,7 @@
               <h3>上游主仓</h3>
               <div class="repo">triton-lang/triton</div>
               <dl>
-                <dt>Stars</dt><dd>18,972</dd>
+                <dt>Stars</dt><dd>18,974</dd>
                 <dt>Forks</dt><dd>2,779</dd>
                 <dt>Issues</dt><dd>1,071</dd>
               </dl>
@@ -395,9 +357,9 @@
               <h3>上游主仓</h3>
               <div class="repo">vllm-project/vllm</div>
               <dl>
-                <dt>Stars</dt><dd>77,144</dd>
-                <dt>Forks</dt><dd>15,771</dd>
-                <dt>Issues</dt><dd>4,359</dd>
+                <dt>Stars</dt><dd>77,150</dd>
+                <dt>Forks</dt><dd>15,773</dd>
+                <dt>Issues</dt><dd>4,358</dd>
               </dl>
             </div>
             <div class="gh-card">
@@ -418,9 +380,9 @@
               <h3>上游主仓</h3>
               <div class="repo">sgl-project/sglang</div>
               <dl>
-                <dt>Stars</dt><dd>26,014</dd>
-                <dt>Forks</dt><dd>5,430</dd>
-                <dt>Issues</dt><dd>2,878</dd>
+                <dt>Stars</dt><dd>26,016</dd>
+                <dt>Forks</dt><dd>5,431</dd>
+                <dt>Issues</dt><dd>2,879</dd>
               </dl>
             </div>
             <div class="gh-card">
@@ -476,7 +438,7 @@
             </th>
             <td><a class="ov-cell-link" href="#pytorch-summary" title="查看 PyTorch（torch_npu） 的七类指标明细表"><span class="ov-rate"><strong>14.66%</strong></span><br><span class="cell-sub">326 / 2223</span></a></td>
             <td><a class="ov-cell-link" href="#pytorch-summary" title="查看 PyTorch（torch_npu） 的七类指标明细表"><span class="ov-rate"><strong>17.45%</strong></span><br><span class="cell-sub">388 / 2223</span></a></td>
-            <td><a class="ov-cell-link" href="#pytorch-summary" title="查看 PyTorch（torch_npu） 的七类指标明细表"><span class="ov-rate"><strong>4.62%</strong></span><br><span class="cell-sub">8 / 173</span></a></td>
+            <td><a class="ov-cell-link" href="#pytorch-summary" title="查看 PyTorch（torch_npu） 的七类指标明细表"><span class="ov-rate"><strong>2.87%</strong></span><br><span class="cell-sub">5 / 174</span></a></td>
             <td><a class="ov-cell-link" href="#pytorch-summary" title="查看 PyTorch（torch_npu） 的七类指标明细表"><span class="ov-rate"><strong>47.44%</strong></span><br><span class="cell-sub">668 / 1408</span></a></td>
             <td><a class="ov-cell-link" href="#pytorch-summary" title="查看 PyTorch（torch_npu） 的七类指标明细表"><span class="ov-rate"><strong>38.48%</strong></span><br><span class="cell-sub">182 / 473</span></a></td>
             <td><a class="ov-cell-link" href="#pytorch-summary" title="查看 PyTorch（torch_npu） 的七类指标明细表"><span class="ov-rate"><strong>1.24%</strong></span><br><span class="cell-sub">3 / 241</span></a></td>
@@ -486,25 +448,25 @@
             <th scope="row">
               <a class="ov-community-link" href="#triton-summary"><span class="ov-community-main">Triton</span><span class="ov-community-plugin">（Triton-Ascend）</span></a>
             </th>
-            <td><a class="ov-cell-link" href="#triton-summary" title="查看 Triton（Triton-Ascend） 的七类指标明细表"><span class="ov-rate"><strong>85.00%</strong></span><br><span class="cell-sub">85% / 100</span></a></td>
+            <td><a class="ov-cell-link" href="#triton-summary" title="查看 Triton（Triton-Ascend） 的七类指标明细表"><span class="ov-rate"><strong>84.62%</strong></span><br><span class="cell-sub">88 / 104</span></a></td>
             <td><a class="ov-cell-link" href="#triton-summary" title="查看 Triton（Triton-Ascend） 的七类指标明细表"><span class="ov-rate"><strong>55.77%</strong></span><br><span class="cell-sub">58 / 104</span></a></td>
-            <td><a class="ov-cell-link" href="#triton-summary" title="查看 Triton（Triton-Ascend） 的七类指标明细表"><span class="ov-rate"><strong>128.57%</strong></span><br><span class="cell-sub">9 / 7</span></a></td>
+            <td><a class="ov-cell-link" href="#triton-summary" title="查看 Triton（Triton-Ascend） 的七类指标明细表"><span class="ov-rate"><strong>46.67%</strong></span><br><span class="cell-sub">7 / 15</span></a></td>
             <td><a class="ov-cell-link" href="#triton-summary" title="查看 Triton（Triton-Ascend） 的七类指标明细表"><span class="ov-rate"><strong>N/A</strong></span><br><span class="cell-sub">—</span></a></td>
             <td><a class="ov-cell-link" href="#triton-summary" title="查看 Triton（Triton-Ascend） 的七类指标明细表"><span class="ov-rate"><strong>36.84%</strong></span><br><span class="cell-sub">49 / 133</span></a></td>
-            <td><a class="ov-cell-link" href="#triton-summary" title="查看 Triton（Triton-Ascend） 的七类指标明细表"><span class="ov-rate"><strong>957.89%</strong></span><br><span class="cell-sub">182 / 19</span></a></td>
+            <td><a class="ov-cell-link" href="#triton-summary" title="查看 Triton（Triton-Ascend） 的七类指标明细表"><span class="ov-rate"><strong>91.97%</strong></span><br><span class="cell-sub">126 / 137</span></a></td>
             <td><a class="ov-cell-link" href="#triton-summary" title="查看 Triton（Triton-Ascend） 的七类指标明细表"><span class="ov-rate"><strong>10.52%</strong></span><br><span class="cell-sub">814 / 7735</span></a></td>
           </tr>
           <tr class="ov-row ov-row-vllm">
             <th scope="row">
               <a class="ov-community-link" href="#vllm-summary"><span class="ov-community-main">vLLM</span><span class="ov-community-plugin">（vLLM-Ascend）</span></a>
             </th>
-            <td><a class="ov-cell-link" href="#vllm-summary" title="查看 vLLM（vLLM-Ascend） 的七类指标明细表"><span class="ov-rate"><strong>95.24%</strong></span><br><span class="cell-sub">20 / 21</span></a></td>
+            <td><a class="ov-cell-link" href="#vllm-summary" title="查看 vLLM（vLLM-Ascend） 的七类指标明细表"><span class="ov-rate"><strong>47.62%</strong></span><br><span class="cell-sub">20 / 42</span></a></td>
             <td><a class="ov-cell-link" href="#vllm-summary" title="查看 vLLM（vLLM-Ascend） 的七类指标明细表"><span class="ov-rate"><strong>11.76%</strong></span><br><span class="cell-sub">186 / 1581</span></a></td>
-            <td><a class="ov-cell-link" href="#vllm-summary" title="查看 vLLM（vLLM-Ascend） 的七类指标明细表"><span class="ov-rate"><strong>540.00%</strong></span><br><span class="cell-sub">27 / 5</span></a></td>
+            <td><a class="ov-cell-link" href="#vllm-summary" title="查看 vLLM（vLLM-Ascend） 的七类指标明细表"><span class="ov-rate"><strong>63.64%</strong></span><br><span class="cell-sub">21 / 33</span></a></td>
             <td><a class="ov-cell-link" href="#vllm-summary" title="查看 vLLM（vLLM-Ascend） 的七类指标明细表"><span class="ov-rate"><strong>29.41%</strong></span><br><span class="cell-sub">20 / 68</span></a></td>
             <td><a class="ov-cell-link" href="#vllm-summary" title="查看 vLLM（vLLM-Ascend） 的七类指标明细表"><span class="ov-rate"><strong>22.76%</strong></span><br><span class="cell-sub">33 / 145</span></a></td>
             <td><a class="ov-cell-link" href="#vllm-summary" title="查看 vLLM（vLLM-Ascend） 的七类指标明细表"><span class="ov-rate"><strong>54.59%</strong></span><br><span class="cell-sub">113 / 207</span></a></td>
-            <td><a class="ov-cell-link" href="#vllm-summary" title="查看 vLLM（vLLM-Ascend） 的七类指标明细表"><span class="ov-rate"><strong>0.84%</strong></span><br><span class="cell-sub">207 / 24702</span></a></td>
+            <td><a class="ov-cell-link" href="#vllm-summary" title="查看 vLLM（vLLM-Ascend） 的七类指标明细表"><span class="ov-rate"><strong>0.84%</strong></span><br><span class="cell-sub">207 / 24703</span></a></td>
           </tr>
           <tr class="ov-row ov-row-sglang">
             <th scope="row">
@@ -513,10 +475,10 @@
             <td><a class="ov-cell-link" href="#sglang-summary" title="查看 SGLang（sgl-kernel-npu） 的七类指标明细表"><span class="ov-rate"><strong>72.84%</strong></span><br><span class="cell-sub">244 / 335</span></a></td>
             <td><a class="ov-cell-link" href="#sglang-summary" title="查看 SGLang（sgl-kernel-npu） 的七类指标明细表"><span class="ov-rate"><strong>2.16%</strong></span><br><span class="cell-sub">39 / 1806</span></a></td>
             <td><a class="ov-cell-link" href="#sglang-summary" title="查看 SGLang（sgl-kernel-npu） 的七类指标明细表"><span class="ov-rate"><strong>14.04%</strong></span><br><span class="cell-sub">8 / 57</span></a></td>
-            <td><a class="ov-cell-link" href="#sglang-summary" title="查看 SGLang（sgl-kernel-npu） 的七类指标明细表"><span class="ov-rate"><strong>100.00%</strong></span><br><span class="cell-sub">80 / 80</span></a></td>
+            <td><a class="ov-cell-link" href="#sglang-summary" title="查看 SGLang（sgl-kernel-npu） 的七类指标明细表"><span class="ov-rate"><strong>80.00%</strong></span><br><span class="cell-sub">80 / 100</span></a></td>
             <td><a class="ov-cell-link" href="#sglang-summary" title="查看 SGLang（sgl-kernel-npu） 的七类指标明细表"><span class="ov-rate"><strong>82.76%</strong></span><br><span class="cell-sub">24 / 29</span></a></td>
             <td><a class="ov-cell-link" href="#sglang-summary" title="查看 SGLang（sgl-kernel-npu） 的七类指标明细表"><span class="ov-rate"><strong>10.17%</strong></span><br><span class="cell-sub">12 / 118</span></a></td>
-            <td><a class="ov-cell-link" href="#sglang-summary" title="查看 SGLang（sgl-kernel-npu） 的七类指标明细表"><span class="ov-rate"><strong>5.63%</strong></span><br><span class="cell-sub">970 / 17226</span></a></td>
+            <td><a class="ov-cell-link" href="#sglang-summary" title="查看 SGLang（sgl-kernel-npu） 的七类指标明细表"><span class="ov-rate"><strong>5.63%</strong></span><br><span class="cell-sub">970 / 17227</span></a></td>
           </tr>
           <tr class="ov-row ov-row-verl">
             <th scope="row">
@@ -525,7 +487,7 @@
             <td><a class="ov-cell-link" href="#verl-summary" title="查看 VERL 的七类指标明细表"><span class="ov-rate"><strong>13.58%</strong></span><br><span class="cell-sub">55 / 405</span></a></td>
             <td><a class="ov-cell-link" href="#verl-summary" title="查看 VERL 的七类指标明细表"><span class="ov-rate"><strong>32.35%</strong></span><br><span class="cell-sub">131 / 405</span></a></td>
             <td><a class="ov-cell-link" href="#verl-summary" title="查看 VERL 的七类指标明细表"><span class="ov-rate"><strong>36.17%</strong></span><br><span class="cell-sub">17 / 47</span></a></td>
-            <td><a class="ov-cell-link" href="#verl-summary" title="查看 VERL 的七类指标明细表"><span class="ov-rate"><strong>0.74%</strong></span><br><span class="cell-sub">3 / 405</span></a></td>
+            <td><a class="ov-cell-link" href="#verl-summary" title="查看 VERL 的七类指标明细表"><span class="ov-rate"><strong>41.67%</strong></span><br><span class="cell-sub">15 / 36</span></a></td>
             <td><a class="ov-cell-link" href="#verl-summary" title="查看 VERL 的七类指标明细表"><span class="ov-rate"><strong>16.38%</strong></span><br><span class="cell-sub">38 / 232</span></a></td>
             <td><a class="ov-cell-link" href="#verl-summary" title="查看 VERL 的七类指标明细表"><span class="ov-rate"><strong>16.33%</strong></span><br><span class="cell-sub">16 / 98</span></a></td>
             <td><a class="ov-cell-link" href="#verl-summary" title="查看 VERL 的七类指标明细表"><span class="ov-rate"><strong>12.56%</strong></span><br><span class="cell-sub">452 / 3598</span></a></td>
@@ -547,7 +509,7 @@
           <tbody>
             <tr><td>全量特性完备率</td><td>326</td><td>2223</td><td><strong>14.66%</strong></td><td><code>torch_npu</code> Python 文件数 / 上游 <code>torch/**/*.py</code> 文件数（能力承载面代理，非功能清单）</td></tr>
             <tr><td>API 一致率</td><td>388</td><td>2223</td><td><strong>17.45%</strong></td><td>适配侧去重 <code>torch.*</code> import 根路径数 / 上游 <code>torch</code> 下 <code>.py</code> 文件数（耦合面代理）</td></tr>
-            <tr><td>CI/CD 覆盖率</td><td>8</td><td>173</td><td><strong>4.62%</strong></td><td>分子=上游 PR/定时 workflow 中含昇腾关键词去重数+适配仓含关键词 workflow；分母=上游 PR 触发类+定时类文件数</td></tr>
+            <tr><td>CI/CD 覆盖率</td><td>5</td><td>174</td><td><strong>2.87%</strong></td><td>分子=上游与适配仓各自 PR/定时 workflow 中含昇腾关键词去重后相加；分母=上游+适配仓的 PR+定时类文件数（同一触发范围）</td></tr>
             <tr><td>主流模型支持率</td><td>668</td><td>1408</td><td><strong>47.44%</strong></td><td>路径含 npu/ascend 的适配侧测试 / 上游 <code>test/**/*.py</code></td></tr>
             <tr><td>主流算子支持率</td><td>182</td><td>473</td><td><strong>38.48%</strong></td><td><code>torch_npu/csrc</code> .cpp / <code>ATen/native</code> .cpp</td></tr>
             <tr><td>基础资料完备率</td><td>3</td><td>241</td><td><strong>1.24%</strong></td><td><code>docs/</code> 下 Markdown 文件数：适配仓 / 上游（体量代理）</td></tr>
@@ -567,12 +529,12 @@
             <tr><th>指标</th><th>分子</th><th>分母</th><th>比率</th><th>备注</th></tr>
           </thead>
           <tbody>
-            <tr><td>全量特性完备率</td><td>85%</td><td>100</td><td><strong>85.00%</strong></td><td>优先 README 声明的 Python API 覆盖；否则为 ascend 与上游 <code>python/triton</code> .py 数量比</td></tr>
+            <tr><td>全量特性完备率</td><td>88</td><td>104</td><td><strong>84.62%</strong></td><td>分母=上游 <code>triton/python/triton/**/*.py</code> 文件数（社区特性/API 面代理）；分子=README 声明已覆盖的 Python API 数（≈ 比例×分母），无自述时分子为 ascend 侧同路径 .py 数，见 §1</td></tr>
             <tr><td>API 一致率</td><td>58</td><td>104</td><td><strong>55.77%</strong></td><td>去重 <code>triton</code> import / 上游 <code>python/triton</code> .py 文件数</td></tr>
-            <tr><td>CI/CD 覆盖率</td><td>9</td><td>7</td><td><strong>128.57%</strong></td><td>workflow 扫描，见 §3</td></tr>
+            <tr><td>CI/CD 覆盖率</td><td>7</td><td>15</td><td><strong>46.67%</strong></td><td>分母=上游+适配仓 PR+定时 文件数；分子=两侧 PR/定时 中含昇腾关键词去重之和，见 §3</td></tr>
             <tr><td>主流模型支持率</td><td>—</td><td>—</td><td><strong>N/A</strong></td><td>Triton 以编译器域为主，无独立模型矩阵</td></tr>
             <tr><td>主流算子支持率</td><td>49</td><td>133</td><td><strong>36.84%</strong></td><td><code>third_party/ascend</code> .cpp / 上游 <code>lib/**/*.cpp</code></td></tr>
-            <tr><td>基础资料完备率</td><td>182</td><td>19</td><td><strong>957.89%</strong></td><td><code>docs/**/*.md</code> 文件数 适配/上游</td></tr>
+            <tr><td>基础资料完备率</td><td>126</td><td>137</td><td><strong>91.97%</strong></td><td>分母=适配仓已支持 API 数（与「全量特性」分子一致）+ <code>third_party/ascend/**/*.cpp</code> 数；分子=`docs/zh</td></tr>
             <tr><td>外部贡献率</td><td>814</td><td>7735</td><td><strong>10.52%</strong></td><td>Search；Git 4138/4871=84.95%</td></tr>
           </tbody>
         </table>
@@ -589,13 +551,13 @@
             <tr><th>指标</th><th>分子</th><th>分母</th><th>比率</th><th>备注</th></tr>
           </thead>
           <tbody>
-            <tr><td>全量特性完备率</td><td>20</td><td>21</td><td><strong>95.24%</strong></td><td>supported_features 矩阵：🟢Functional + 🔵Experimental 行数 / 矩阵总行（文档在 vllm-ascend）</td></tr>
+            <tr><td>全量特性完备率</td><td>20</td><td>42</td><td><strong>47.62%</strong></td><td>分母=上游 <code>docs/features/*.md</code> 篇数（社区特性文档规模）；分子=vllm-ascend <code>supported_features.md</code> 中 🟢+🔵 行，见 §1</td></tr>
             <tr><td>API 一致率</td><td>186</td><td>1581</td><td><strong>11.76%</strong></td><td>去重 <code>vllm.*</code> import 根路径数 / 上游 <code>vllm/**/*.py</code> 文件数（耦合面代理）</td></tr>
-            <tr><td>CI/CD 覆盖率</td><td>27</td><td>5</td><td><strong>540.00%</strong></td><td>见 §3：workflow 扫描 + 昇腾关键词；分母=上游 PR+定时类文件数</td></tr>
+            <tr><td>CI/CD 覆盖率</td><td>21</td><td>33</td><td><strong>63.64%</strong></td><td>分母=上游+vLLM-Ascend 的 PR+定时 workflow 数；分子=两侧 PR/定时 中含昇腾关键词去重之和，见 §3</td></tr>
             <tr><td>主流模型支持率</td><td>20</td><td>68</td><td><strong>29.41%</strong></td><td>supported_models 表 ✅ 行 / 可解析行</td></tr>
             <tr><td>主流算子支持率</td><td>33</td><td>145</td><td><strong>22.76%</strong></td><td>Ascend/vLLM <code>ops.def(</code> 次数比</td></tr>
             <tr><td>基础资料完备率</td><td>113</td><td>207</td><td><strong>54.59%</strong></td><td>插件 docs/source 与上游 docs 的 Markdown 文件数比（代理）</td></tr>
-            <tr><td>外部贡献率</td><td>207</td><td>24702</td><td><strong>0.84%</strong></td><td>Search 关键词 PR/总 PR；Git：2642/2671=98.91%</td></tr>
+            <tr><td>外部贡献率</td><td>207</td><td>24703</td><td><strong>0.84%</strong></td><td>Search 关键词 PR/总 PR；Git：2642/2671=98.91%</td></tr>
           </tbody>
         </table>
       </div>
@@ -614,10 +576,10 @@
             <tr><td>全量特性完备率</td><td>244</td><td>335</td><td><strong>72.84%</strong></td><td>ascend_npu_support_features：A2/A3 已支持 + Experimental 行 / 矩阵可解析行</td></tr>
             <tr><td>API 一致率</td><td>39</td><td>1806</td><td><strong>2.16%</strong></td><td>NPU 子树去重 <code>sglang</code> import / 全库 <code>python/sglang/**/*.py</code> 文件数</td></tr>
             <tr><td>CI/CD 覆盖率</td><td>8</td><td>57</td><td><strong>14.04%</strong></td><td>主仓 workflow：PR+定时 分母；含昇腾关键词为分子（单仓）</td></tr>
-            <tr><td>主流模型支持率</td><td>80</td><td>80</td><td><strong>100.00%</strong></td><td>文档绿行 / 数据行</td></tr>
+            <tr><td>主流模型支持率</td><td>80</td><td>100</td><td><strong>80.00%</strong></td><td>分母=主仓 <code>docs/supported_models/**</code> 各表数据行数（社区模型清单规模代理）；分子=昇腾 <code>ascend_npu_support_models.md</code> 中带绿色 √ 的模型行数（NPU 已支持），见 §3</td></tr>
             <tr><td>主流算子支持率</td><td>24</td><td>29</td><td><strong>82.76%</strong></td><td>sgl-kernel-npu m.def / (kernel+主仓 m.def)</td></tr>
             <tr><td>基础资料完备率</td><td>12</td><td>118</td><td><strong>10.17%</strong></td><td><code>docs/platforms/ascend</code> md / 全 <code>docs</code> md</td></tr>
-            <tr><td>外部贡献率</td><td>970</td><td>17226</td><td><strong>5.63%</strong></td><td>Search；Git 1284/11736=10.94%</td></tr>
+            <tr><td>外部贡献率</td><td>970</td><td>17227</td><td><strong>5.63%</strong></td><td>Search；Git 1284/11736=10.94%</td></tr>
           </tbody>
         </table>
       </div>
@@ -636,7 +598,7 @@
             <tr><td>全量特性完备率</td><td>55</td><td>405</td><td><strong>13.58%</strong></td><td>内容命中 NPU/Ascend 的 <code>.py</code> / <code>verl/**/*.py</code>（能力触达代理）</td></tr>
             <tr><td>API 一致率</td><td>131</td><td>405</td><td><strong>32.35%</strong></td><td>内容命中集合中去重 <code>verl</code> import / 全包 .py</td></tr>
             <tr><td>CI/CD 覆盖率</td><td>17</td><td>47</td><td><strong>36.17%</strong></td><td>主仓 workflow：PR+定时分母；含昇腾关键词为分子</td></tr>
-            <tr><td>主流模型支持率</td><td>3</td><td>405</td><td><strong>0.74%</strong></td><td>无独立模型矩阵；路径含 npu/ascend 的 <code>.py</code> / 全包 <code>.py</code>（路径代理）</td></tr>
+            <tr><td>主流模型支持率</td><td>15</td><td>36</td><td><strong>41.67%</strong></td><td>分母=<code>verl/models/**</code> 非 experimental 的 <code>.py</code> 数（社区模型实现规模代理）；分子=「算法支持现状」文档表中出现的去重模型名（NPU 示例），见 §3</td></tr>
             <tr><td>主流算子支持率</td><td>38</td><td>232</td><td><strong>16.38%</strong></td><td><code>*npu*.sh</code> / 仓库内全部 <code>.sh</code>（脚本侧代理）</td></tr>
             <tr><td>基础资料完备率</td><td>16</td><td>98</td><td><strong>16.33%</strong></td><td><code>docs/ascend_tutorial</code> 文件 / 全 <code>docs</code>（md+rst）</td></tr>
             <tr><td>外部贡献率</td><td>452</td><td>3598</td><td><strong>12.56%</strong></td><td>Search；Git 1177/2336=50.39%</td></tr>
@@ -647,43 +609,9 @@
     </section>
 
     <div class="footnote">
-      <p><strong>说明：</strong>本页数值与 <code>reports/ascend_community_report_overall.md</code> 及各 <code>reports/*_community_report.md</code> 保持一致；可通过 <code>python3 run_all_community_reports.py --refresh-dashboard</code> 或页头「一键刷新」（需 <code>serve_dashboard</code>）更新。</p>
-      <p><strong>本地预览：</strong>推荐 <code>python3 scripts/serve_dashboard.py</code> 后打开提示的地址（含一键刷新接口）。仅用静态服务时：<code>python3 -m http.server 8700</code>，访问 <code>http://localhost:8700/reports/ascend_community_dashboard.html</code>（此时按钮不可用，请在终端执行上述脚本）。</p>
+      <p><strong>说明：</strong>本页数值与 <code>reports/ascend_community_report_overall.md</code> 及各 <code>reports/*_community_report.md</code> 保持一致；更新请运行 <code>python3 run_all_community_reports.py --refresh-dashboard</code>（或完整采集流程后带 <code>--refresh-dashboard</code>）。</p>
+      <p><strong>本地预览：</strong>可在项目根执行 <code>python3 -m http.server 8765</code>，访问 <code>http://localhost:8765/reports/ascend_community_dashboard.html</code>；或使用 <code>python3 scripts/serve_dashboard.py</code>（同目录静态预览，另提供 <code>POST /api/refresh-reports</code> 供脚本或 curl 触发刷新）。</p>
     </div>
   </div>
-  <script>
-  (function () {
-    var btn = document.getElementById("btn-refresh-reports");
-    var hint = document.getElementById("dash-refresh-hint");
-    if (!btn || !hint) return;
-    btn.addEventListener("click", function () {
-      btn.disabled = true;
-      hint.textContent = "正在执行 run_all_community_reports.py --refresh-dashboard（可能需要数分钟）…";
-      fetch("/api/refresh-reports", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: "{}"
-      })
-        .then(function (r) {
-          return r.json();
-        })
-        .then(function (j) {
-          if (j.ok) {
-            hint.textContent = "刷新完成，正在重新加载页面…";
-            location.reload();
-          } else {
-            hint.textContent =
-              "执行失败（退出码 " + j.code + "）。请在本机终端查看输出。";
-            btn.disabled = false;
-          }
-        })
-        .catch(function () {
-          hint.textContent =
-            "无法调用刷新接口：请在本机项目根目录运行 python3 scripts/serve_dashboard.py 后，用该服务打开的页面再试；或在终端执行：python3 run_all_community_reports.py --refresh-dashboard";
-          btn.disabled = false;
-        });
-    });
-  })();
-  </script>
 </body>
 </html>
