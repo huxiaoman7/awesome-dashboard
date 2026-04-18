@@ -235,6 +235,13 @@
       font-size: 0.85rem;
       color: var(--muted);
     }
+    .footnote-disclaimer {
+      margin: 0;
+      font-size: 0.78rem;
+      color: var(--muted);
+      text-align: center;
+      line-height: 1.5;
+    }
     .link-md {
       display: inline-block;
       margin-top: 0.75rem;
@@ -328,8 +335,8 @@
       section h2 .tag { font-size: 0.62rem; }
       th, td { padding: 0.5rem 0.55rem; font-size: 0.82rem; }
       table { font-size: 0.82rem; }
-      .footnote { font-size: 0.8rem; margin-top: 2rem; padding-top: 1.25rem; }
-      .footnote code { word-break: break-all; font-size: 0.78em; }
+      .footnote { margin-top: 2rem; padding-top: 1.25rem; }
+      .footnote-disclaimer { font-size: 0.74rem; }
       .link-md {
         display: inline-block;
         margin-top: 0.85rem;
@@ -721,8 +728,7 @@
     </section>
 
     <div class="footnote">
-      <p><strong>说明：</strong>本页数值与 <code>reports/ascend_community_report_overall.md</code> 及各 <code>reports/*_community_report.md</code> 保持一致；更新请运行 <code>python3 run_all_community_reports.py --refresh-dashboard</code>（或完整采集流程后带 <code>--refresh-dashboard</code>）。</p>
-      <p><strong>本地预览：</strong>可在项目根执行 <code>python3 -m http.server 8765</code>，访问 <code>http://localhost:8765/reports/ascend_community_dashboard.html</code>；或使用 <code>python3 scripts/serve_dashboard.py</code>（同目录静态预览，另提供 <code>POST /api/refresh-reports</code> 供脚本或 curl 触发刷新）。</p>
+      <p class="footnote-disclaimer">注意：本数据仅供参考</p>
     </div>
   </div>
 </body>
